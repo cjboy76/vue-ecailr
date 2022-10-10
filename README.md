@@ -1,6 +1,8 @@
 # VueEcailr
 
-![demo.gif](./document/demo.gif)
+<p align="center">
+  <img src="./document/demo.gif" alt="vue-ecailr-demo-gif" width="80%" />
+</p>
 
 ## Simple Usage
 
