@@ -12,6 +12,15 @@ const translate = computed(() => {
   return { transform: 'translateX(' + count.value + '%)' };
 });
 
+move();
+
+watch(
+  () => props.stop,
+  () => {
+    move();
+  }
+);
+
 function move(fps = 60) {
   if (props.stop) {
     count.value = 0;
@@ -26,15 +35,6 @@ function move(fps = 60) {
     requestAnimationFrame(move);
   }, 1000 / fps);
 }
-
-move();
-
-watch(
-  () => props.stop,
-  () => {
-    move();
-  }
-);
 </script>
 
 <template>
@@ -48,6 +48,5 @@ watch(
 <style scoped>
 .outer {
   overflow: hidden;
-  position: relative;
 }
 </style>
