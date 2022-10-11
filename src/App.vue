@@ -10,27 +10,37 @@ function toggle() {
 </script>
 
 <template>
-  <div>
+  <div class="content">
     <vue-ecailr :stop="stop">
       <h1>👋 👋 Hello VueEcailr</h1>
     </vue-ecailr>
   </div>
   <button @click="toggle">Toggle Stop</button>
   <div class="codeBlock">
-    <code>$ npm install vue-ecailr</code>
+    <div>
+      <code class="code">$ npm install vue-ecailr</code>
+    </div>
   </div>
-  <a href="https://github.com/cjboy76/vue-ecailr" target="_blank">
-    <GitHubIcon />
-  </a>
+  <div>
+    <a href="https://github.com/cjboy76/vue-ecailr" target="_blank">
+      <button>
+        <GitHubIcon />
+      </button>
+    </a>
+  </div>
 </template>
 
 <style>
-.codeBlock {
-  margin: 4rem 0;
+.content {
+  margin: 1rem;
 }
-code {
+.codeBlock {
+  margin: 4rem 0 2rem;
+}
+.codeBlock .code {
   background: #000;
   padding: 1rem 1.5rem;
+  margin: 1rem 1.5rem;
   border-radius: 5px;
 }
 </style>
