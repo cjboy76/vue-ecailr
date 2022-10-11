@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue';
-export interface Props {
-  stop?: boolean;
-}
+import type { Props } from './type';
+
 const props = withDefaults(defineProps<Props>(), {
   stop: false,
 });
