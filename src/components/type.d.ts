@@ -1,3 +1,3 @@
-export interface Props {
-  stop?: boolean;
+export interface ControlProp {
+  stop: boolean;
 }

@@ -2,7 +2,13 @@
   "name": "vue-ecailr",
   "version": "0.0.0",
   "type": "module",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cjboy76/vue-ecailr.git"
+  },
   "main": "./dist/my-lib.umd.cjs",
   "module": "./dist/my-lib.js",
   "exports": {
