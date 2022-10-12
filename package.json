@@ -20,8 +20,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "build:lib": "vite build --mode lib && vue-tsc --emitDeclarationOnly && mv dist/components/VueEcailr.vue.d.ts dist/types && rm dist/components",
-    "preview": "vite preview"
+    "build:lib": "vite build --mode lib && vue-tsc --emitDeclarationOnly"
   },
   "dependencies": {
     "vue": "^3.2.37"
