@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import VueEcailr from './components/VueEcailr.vue';
+import VueEcailr from 'vue-ecailr';
 import GitHubIcon from './components/GitHubIcon.vue';
 import CheckIcon from './components/CheckIcon.vue';
 
