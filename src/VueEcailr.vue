@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue';
 
-interface ControlProp {
+export interface Prop {
   stop: boolean;
 }
 
-const props = withDefaults(defineProps<ControlProp>(), {});
+const props = withDefaults(defineProps<Prop>(), {});
 const count = ref(0);
 const translate = computed(() => {
   return { transform: 'translateX(' + count.value + '%)' };

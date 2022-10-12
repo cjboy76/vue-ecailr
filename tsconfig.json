@@ -11,9 +11,10 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "outDir": "lib",
+    "declaration": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }],
-  "files": ["src/vite-env.d.ts"]
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
