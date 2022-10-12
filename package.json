@@ -14,12 +14,11 @@
   "module": "./lib/vue-ecailr.js",
   "exports": {
     ".": {
-      "import": "./dist/vue-ecailr.js"
+      "import": "./lib/vue-ecailr.js"
     }
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
     "build:lib": "vite build --mode lib && vue-tsc --emitDeclarationOnly"
   },
   "dependencies": {
