@@ -1,6 +1,6 @@
 {
   "name": "vue-ecailr",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "files": [
     "lib"
@@ -14,12 +14,11 @@
   "module": "./lib/vue-ecailr.js",
   "exports": {
     ".": {
-      "import": "./dist/vue-ecailr.js"
+      "import": "./lib/vue-ecailr.js"
     }
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
     "build:lib": "vite build --mode lib && vue-tsc --emitDeclarationOnly"
   },
   "dependencies": {
