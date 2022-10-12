@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
         target: 'esnext',
         outDir: 'lib',
         lib: {
-          entry: resolve(__dirname, './src/components/main.ts'),
+          entry: resolve(__dirname, './src/index.ts'),
           formats: ['es'],
           fileName: () => 'vue-ecailr.js',
         },
