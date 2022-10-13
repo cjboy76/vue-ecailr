@@ -6,8 +6,6 @@ on:
       - 'site/**'
   pull_request:
     branches: [main]
-      paths:
-      - 'site/**'
 
 defaults:
   run:
