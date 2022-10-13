@@ -2,7 +2,7 @@
 import { ref, computed, watch } from 'vue';
 
 export interface Prop {
-  stop: boolean;
+  stop?: boolean;
 }
 
 const props = withDefaults(defineProps<Prop>(), {});
