@@ -15,6 +15,10 @@
   "exports": {
     ".": {
       "import": "./lib/vue-ecailr.js"
+    },
+    "./lib/style.css": {
+      "import": "./lib/style.css",
+      "require": "./lib/style.css"
     }
   },
   "scripts": {
